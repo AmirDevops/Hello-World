@@ -1,0 +1,18 @@
+Console Output
+Started by user amirafzal
+Running as SYSTEM
+Building in workspace C:\Jenkins-ws
+The recommended git tool is: NONE
+using credential 8f2007c1-3603-43ac-85f2-92eeee561cba
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url git@github.com:AmirDevops/Hello-World.git # timeout=10
+Fetching upstream changes from git@github.com:AmirDevops/Hello-World.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.29.2.windows.2'
+using GIT_SSH to set credentials githubsshprivatekey
+ > git.exe fetch --tags --force --progress -- git@github.com:AmirDevops/Hello-World.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/my-feature^{commit}" # timeout=10
+Checking out Revision 72486f2789ace3084c7385cd31e87c6de48adbb5 (refs/remotes/origin/my-feature)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 72486f2789ace3084c7385cd31e87c6de48adbb5 # timeout=10
